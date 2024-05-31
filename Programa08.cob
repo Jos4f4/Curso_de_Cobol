@@ -1,0 +1,46 @@
+
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGRAMA08.
+      *===========================================
+      *== AUTOR: ***; EMPRESA: XPTO
+      *==OBJETIVO: OPERADORES ARITMETICOS
+      *==DATA XX/XX/2024
+      *==OBSERVACOES:
+      *===========================================
+
+       ENVIRONMENT         DIVISION.
+       CONFIGURATION       SECTION.
+       SPECIAL-NAMES.
+           DECIMAL-POINT IS COMMA.
+
+       DATA                DIVISION.
+       WORKING-STORAGE     SECTION.
+       77  WRK-NUM1        PIC 9(04) VALUE ZEROS.
+       77  WRK-NUM2        PIC 9(04) VALUE ZEROS.
+       77  WRK-RESULTADO1  PIC S9(07)V9(02) VALUE ZEROS.
+      *77  WRK-RESULTADO-ED PIC Z.ZZZ.ZZ9,99 VALUE ZEROS.
+
+       PROCEDURE DIVISION.
+       0100-INPUT          SECTION.
+           DISPLAY "DIGITE O NÚMERO 1: ".
+              ACCEPT WRK-NUM1.
+           DISPLAY "DIGITE O NÚMERO 2: ".
+               ACCEPT WRK-NUM2.
+
+       0150-PROCESS        SECTION.
+      *    ADD WRK-NUM1 WRK-NUM2 TO WRK-RESULTADO1.
+      *    SUBTRACT WRK-NUM1 FROM WRK-NUM2 GIVING WRK-RESULTADO1.
+      *    MULTIPLY WRK-NUM1 BY WRK-NUM2 GIVING WRK-RESULTADO1.
+      *    DIVIDE WRK-NUM1 BY WRK-NUM2 GIVING WRK-RESULTADO1.
+      *===========COMPUTER==============================================
+      *    ADD WRK-NUM1 WRK-NUM2 TO WRK-RESULTADO1.
+      *    DISPLAY "a SOMA É: " WRK-RESULTADO1.
+      *    DIVIDE WRK-RESULTADO1 BY 2 GIVING WRK-RESULTADO1.
+           COMPUTE WRK-RESULTADO1 = (WRK-NUM1 + WRK-NUM2)/2.
+
+       0200-PRINT         SECTION.
+      *    MOVE WRK-RESULTADO1 TO WRK-RESULTADO-ED.
+           DISPLAY "RESULTADO DA EXPRESSÃO : " WRK-RESULTADO1.
+
+       0300-FINALLY      SECTION.
+           STOP RUN.

@@ -2,7 +2,7 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGRAMA01.
       *===========================================
-      *== AUTOR: JOSAFA; EMPRESA: XPTO
+      *== AUTOR: ***; EMPRESA: XPTO
       *==OBJETIVO: 1º CONTATO COM COBOL
       *==DATA XX/XX/2024
       *==OBSERVACOES:
