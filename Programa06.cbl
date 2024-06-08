@@ -15,14 +15,11 @@
 
        DATA                DIVISION.
        WORKING-STORAGE     SECTION.
-       01 WRK-ENTRADA.
-           05 WRK-CODIGO PIC 9(04) VALUE ZEROS.
-           05 WRK-NOME PIC X(15) VALUE ZEROS.
-           05 WRK-SALARIO PIC 9(06) VALUE ZEROS.
+       COPY "#BOOKDATprograma6.cpy"
 
-       PROCEDURE DIVISION.
+       PROCEDURE           DIVISION.
        0100-RECEBE         SECTION.
-           DISPLAY "ENTRE COM A LIMHA DE DADOS: "
+           DISPLAY "ENTRE COM A LINHA DE DADOS: "
            ACCEPT WRK-ENTRADA.
 
        0200-MOSTRA         SECTION.
